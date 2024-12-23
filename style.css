@@ -86,7 +86,7 @@ section .title::after {
     left: 50%;
     font-size: 20px;
     color: crimson;
-    padding: 0 5px;
+    padding: 0 2px;
     background: #fff;
     transform: translateX(-50%);
 }
@@ -779,6 +779,50 @@ footer {
     text-align: center;
 }
 
+.platforms{
+    display: grid;
+    justify-content: center;
+    font-weight: 600;
+    font-size: x-large;
+    padding-bottom: 30px;
+    
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+.facebook {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png');
+}
+
+.twitter {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733579.png');
+}
+
+.instagram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733558.png');
+}
+
+.linkedin {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733561.png');
+}
+
 footer span a {
     color: crimson;
     text-decoration: none;
@@ -795,7 +839,7 @@ footer span a:hover {
 @media (max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
-        width: 350px;
+        width: 300px;
     }
 }
 
@@ -970,6 +1014,7 @@ footer span a:hover {
   }
   .overlay2:hover .overlay {
     width: 100%;
+    overflow: hidden;
   }
   
   .text0 {
